@@ -42,6 +42,10 @@ Props you must provide:
 * ```password```: the password required to access your neo4j db
 * ```query```: the query you'd like to execute
 
+Furthermore you can provide an onClickHandler as an optional prop of Neo4jGraphRenderer.
+The handler will be triggered whenever a node is clicked and will give back more details e.g. properties.
+For instance, you might want to set the attribute as `onClick={(node)=>node.propertyMap}` to retrieve the properties of the corresponding node.
+
 & There you go! Your neo4j graph has been rendered!
 
 **NOTE**: If you would like to add any extra CSS or your own font, the graph is generated in a ```div``` with id "graph"
